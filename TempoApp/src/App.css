@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Heebo', sans-serif;
+  --txtcor: #1C1C1C;
+  --bgcolor: #D3D3D3;
+  --midcolor: #808080;
+  --blue: #009ACD;
+  --blueDeep: #00688B;
+}
+
+body {
+  background-color: var(--bgcolor);
+  color: var(--txtcolor);
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 2em;
+
+  width: 100%;
+  max-width: 100vh;
+  min-width: 500px;
+  max-height: 100vh;
+  height: 50vh;
+}
+
+form {
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vh;
+
+}
+
+form ::placeholder {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+input {
+  display: flex;
+  max-width: 100vh;
+  width: 100%;
+  height: 25px;
+  outline: none;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.20);
+}
+
+.bt-form{
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.20);
+}
+
+button {
+  justify-content: center;
+  text-align: center;
+  height: 35px;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: var(--blue);
+  color: white;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.container-second {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0;
+  max-width: 100vh;
+  width: 100%;
+  max-height: 100vh;
+  height: 50vh;
+}
+
+
+.container-second ul{
+  display: flex;
+  justify-content: center;
+}
+
+.card-main {
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.bt-add {
+  margin-left: 15px;
+  padding: 0 10px 0 10px;
+  font-size: large;
+  width: 36px;
+  margin-bottom: 7em;
+}
+
+
+
