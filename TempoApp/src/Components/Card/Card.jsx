@@ -1,8 +1,6 @@
 import './Card.css'
 import propTypes from 'prop-types'
 import { useState } from 'react'
-import { useContext } from 'react'
-import {mainContext} from '../../App'
 import { useEffect } from 'react'
 import errorData from '../../helpers/errorData'
 
