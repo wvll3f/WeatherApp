@@ -6,8 +6,8 @@
     background-color: white;
     border-radius: 10px;
     padding: 30px;
-    max-height: 310px;
-    max-width: 330px;
+    max-height: 325px;
+    max-width: 340px;
     min-width: 250px;
     color: var(--txtcor);
 
@@ -57,7 +57,7 @@
 
 .city-span {
     display: block;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     text-align: center;
 }
@@ -79,6 +79,8 @@
     font-size: 30px;
     font-weight: 800;
     margin-top: 20px;
+    padding:0;
+    margin:0;
 }
 
 .temp-span {
@@ -86,18 +88,26 @@
     font-size: 70px;
     font-weight: bold;
     letter-spacing: 3px;
+    padding:0;
+    margin:0;
 }
 
 .ext {
     text-align: center;
+    padding:0;
+    margin:0;
 }
 
 img{
     max-width: 45px;
+    padding:0;
+    margin:0;
 }
 
 .info-span {
     display: block;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
+    padding:0;
+    margin:0;
 }

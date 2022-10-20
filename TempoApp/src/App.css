@@ -51,6 +51,8 @@ body {
   max-width: 900px;
   max-height: 450px;
 
+  margin: 15px;
+  margin-top:9em;
   padding: 1em;
   text-align: center;
 
@@ -71,8 +73,8 @@ body {
 }
 
 .container {
+ 
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -157,12 +159,17 @@ button {
 
 .container-second {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   margin: 0;
 
   max-width: 100vh;
   max-height: 100vh;
+}
+
+.container-second .card-main{
+  margin-top:8em;
 }
 
 

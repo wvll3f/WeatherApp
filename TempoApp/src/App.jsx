@@ -34,7 +34,7 @@ function App() {
 
   const estilo = {
     filter: 'blur(4px)',
-    display:'none'
+    display: 'none'
   }
   const newEstilo = {
 
@@ -119,6 +119,7 @@ function App() {
   return (
 
     <div className="Main">
+
 
       {vis && <div className='modal-aviso-ini' >
         <section className='modal-aviso-ini-sec'>
