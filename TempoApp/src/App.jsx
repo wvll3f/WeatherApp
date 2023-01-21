@@ -50,6 +50,7 @@ function App() {
     marginRight: '5px',
 
   };
+ var placeHouderText = 'Digite a cidade que deseja'
 
   // encaminha o valor do input para a pesquisa da APi
   const handleSubmit = (event) => {
@@ -60,6 +61,7 @@ function App() {
       //primeira validação para não aparecer mesnagem de erro
       if (res.id == 'erro') {
         [{ id: 'erro' }]
+        window.alert('Digite uma cidade valida')
       }
       else if (flag) {
         // utilizando o "prev" para adicionar um novo elemento mas mantendo os dados anteriores sem alteração
@@ -74,7 +76,6 @@ function App() {
       setIdcontroller(prev => prev++)
       setCity('')
     })
-
       .catch((e) => {
         console.log(`Catch: ${e}`)
         setData(errorData)
@@ -107,12 +108,14 @@ function App() {
     setData([])
   }
 
+ 
+
   useEffect(() => {
     if (data.id == 'erro') {
       dataAux.pop()
       setData(dataAux)
     } else {
-      console.log(data)
+      //console.log(data)
     }
   }, [data]);
 
@@ -149,7 +152,7 @@ function App() {
             value={city}
             onChange={({ target: { value } }) => setCity(value)}
             type="text"
-            placeholder='Digite a cidade que deseja'
+            placeholder={placeHouderText}
             required
             disabled={vis ? true : false}
           >
@@ -163,7 +166,6 @@ function App() {
   );
 
   function removeModal() {
-    console.log('tchau')
     setVis(!vis)
   }
 
